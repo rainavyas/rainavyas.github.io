@@ -1,0 +1,145 @@
+
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.jumbotron {
+    height: 20vh;
+    background-image: url('../assets/rainbow.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+}
+
+.jumbotron h1,
+.jumbotron h2 {
+    color: #000;
+}
+
+.content-section-b {
+    background-color: #eee;
+}
+
+footer {
+    background-color: #f8f8f8;
+    border: 1px solid #e7e7e7;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33%;
+  padding: 5px;
+  font-size: large;
+}
+
+.doublecolumn {
+  float: left;
+  width: 66%;
+  padding: 5px;
+  font-size: large;
+  text-align: justify;
+}
+
+.fullcolumn {
+  float: left;
+  width: 100%;
+  padding: 5px;
+  font-size: large;
+  text-align: justify;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.center {
+  margin-left: 50px;
+  margin-right: 50px;
+  height: 250px;
+}
+
+#projects {
+    margin-top: 90px;
+
+}
+
+.timeline-image {
+  vertical-align: unset;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 5px;
+}
+
+.timeline-text {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+section {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.timeline-item {
+  margin-top: 20px;
+}
+.timeline-text {
+         max-width: 90%;
+}
+
+@media screen and (max-width: 768px) {
+         body {
+           width: 100%;
+         }
+	.column {
+	  float: unset;
+          width: 100%;
+          text-align: center;
+	}
+        .center {
+          display: inline-block;
+
+          margin: 0 0 15px 0;
+        }
+        .navbar-toggle {
+          margin-right: 15px;
+        }
+        .doublecolumn {
+          width: 100%;
+          padding: 14px;
+	}
+        .section-heading {
+          padding: 0 8px;
+        }
+        .pub-item{
+          padding: 0 8px;
+        }
+        .teaching-text{
+          padding: 8px;
+        }
+        .teaching-item{
+          padding-right: 8px;
+        }
+
+        .timeline-image {
+          width: 35px;
+          height: 35px;
+         }
+        .timeline-item {
+          width: 100%;
+
+        }
+        .timeline-text {
+          width: 260px;
+          text-align: left;
+         }
+}
+
