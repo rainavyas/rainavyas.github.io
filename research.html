@@ -66,7 +66,7 @@
                     <p>
 			    My research is concerned with the development of <em>Safe AI</em>, i.e, developing methods to ensure deployed artificial intelligence models
 			    do not pose a threat in high stakes environments. To address this, my work has focussed primarily on adversarial attacks (and how we can
-			    defend against them) in the Natural Language Processing (NLP) domain. Other works have explored other Safe AI related topics including: uncertainty
+			    defend against them) in the Natural Language Processing (NLP) domain. My other works have explored other Safe AI related topics including: uncertainty
 			    for out of distribution handling; biases and shortcut learning. 
                     </p>
                     <p>
@@ -88,41 +88,112 @@
 
                 <div class="row">
                     <div class="column">
-                        <img src="assets/vyas_cycle.jpg" class="img">
+                        <img src="assets/publication_imgs/usd.png" class="img">
                     </div>
                         <div class="doublecolumn">
-                            <h3>Paper Title</h3>
-                            <p>Author List <strong>Vyas Raina</strong></p>
-                            <p>Publication Venue</p>
-                            <a class="button button1" href="https://www.google.com" target="_blank">Paper</a>
-                            <a class="button button2" href="https://www.google.com" target="_blank">Poster</a>
-                            <a class="button button3" href="https://www.google.com" target="_blank">Presentation</a>
-                            <a class="button button4" href="https://www.google.com" target="_blank">Code</a>
+                            <p class="title_paper">Gender Bias and Universal Substitution Adversarial Attacks on Grammatical Error Correction Systems for Automated Assessment</p>
+                            <p><strong>Vyas Raina</strong>, Mark Gales</p>
+                            <p>U.K. Speech 2022</p>
+                            <a class="button button1" href="https://arxiv.org/pdf/2208.09466" target="_blank">Paper</a>
+                            <a class="button button2" href="assets/pdfs/UK_Speech_2022_Poster.pdf" target="_blank">Poster</a>
+                            <a class="button button4" href="https://github.com/rainavyas/SubTunedGramformerAttack" target="_blank">Code</a>
                             <details>
                                 <summary style="display:list-item">Abstract</summary>
-                                Abstract written here.
+                                Grammatical Error Correction (GEC) systems perform a sequence-to-sequence task, where an input word sequence containing grammatical errors,
+                                 is corrected for these errors by the GEC system to output a grammatically correct word sequence. With the advent of deep learning methods,
+                                  automated GEC systems have become increasingly popular. For example, GEC systems are often used on speech transcriptions of English learners
+                                   as a form of assessment and feedback - these powerful GEC systems can be used to automatically measure an aspect of a candidate's fluency.
+                                    The count of <em>edits</em> from a candidate's input sentence (or essay) to a GEC system's grammatically corrected output sentence is indicative
+                                    of a candidate's language ability, where fewer edits suggest better fluency. The count of edits can thus be viewed as a 
+                                    <em>fluency</em> score with zero implying perfect fluency. However, although deep learning based GEC systems are extremely powerful and accurate,
+                                    they are susceptible to adversarial attacks: an adversary can introduce a small, specific change at the input of a system that causes a large,
+                                    undesired change at the output. When considering the application of GEC systems to automated language assessment, the aim of an adversary could
+                                    be to cheat by making a small change to a grammatically incorrect input sentence that conceals the errors from a GEC system, such that no edits
+                                    are found and the candidate is unjustly awarded a perfect fluency score. This work examines a simple universal substitution adversarial attack
+                                    that non-native speakers of English could realistically employ to deceive GEC systems used for
                             </details>                 
                         </div>
                 </div>
     
                 <div class="row">
                     <div class="column">
-                        <img src="assets/vyas_cycle.jpg" class="img">
+                        <img src="assets/publication_imgs/residue.png" class="img">
                     </div>
                         <div class="doublecolumn">
-                            <h3>Paper Title</h3>
-                            <p>Author List <strong>Vyas Raina</strong></p>
-                            <p>Publication Venue</p>
-                            <a class="button button1" href="https://www.google.com" target="_blank">Paper</a>
-                            <a class="button button2" href="https://www.google.com" target="_blank">Poster</a>
-                            <a class="button button3" href="https://www.google.com" target="_blank">Presentation</a>
-                            <a class="button button4" href="https://www.google.com" target="_blank">Code</a>
+                            <p class="title_paper">Residue-Based Natural Language Adversarial Attack Detection</p>
+                            <p><strong>Vyas Raina</strong>, Mark Gales</p>
+                            <p>North American Chapter of the Association for Computational Linguistics (NAACL) 2022</p>
+                            <a class="button button1" href="https://arxiv.org/pdf/2204.10192" target="_blank">Paper</a>
+                            <a class="button button2" href="assets/pdfs/naacl_poster.pdf" target="_blank">Poster</a>
+                            <a class="button button4" href="https://github.com/rainavyas/NAACL-2022-Residue-Detector" target="_blank">Code</a>
                             <details>
                                 <summary style="display:list-item">Abstract</summary>
-                                Abstract written here.
+                                Deep learning based systems are susceptible to adversarial attacks, where a small, imperceptible change at the input alters the model prediction.
+                                However, to date the majority of the approaches to detect these attacks have been designed for image processing systems. Many popular image adversarial
+                                 detection approaches are able to identify adversarial examples from embedding feature spaces, whilst in the NLP domain existing state of the art detection
+                                  approaches solely focus on input text features, without consideration of model embedding spaces. This work examines what differences result when porting
+                                   these image designed strategies to Natural Language Processing (NLP) tasks - these detectors are found to not port over well. This is expected as NLP
+                                systems have a very different form of input: discrete and sequential in nature, rather than the continuous and fixed size inputs for images. As an
+                                equivalent model-focused NLP detection approach, this work proposes a simple sentence-embedding "residue" based detector to identify adversarial examples.
+                                On many tasks, it out-performs ported image domain detectors and recent state of the art NLP specific detectors.
                             </details>                 
                         </div>
                 </div>
+            
+                <div class="row">
+                    <div class="column">
+                        <img src="assets/publication_imgs/shifts.JPG" class="img">
+                    </div>
+                        <div class="doublecolumn">
+                            <p class="title_paper">Shifts: A dataset of real distributional shift across multiple large-scale tasks</p>
+                            <p>Andrey Malinin, Neil Band, German Chesnokov, Yarin Gal, Mark JF Gales, Alexey Noskov, Andrey Ploskonosov, Liudmila Prokhorenkova, Ivan Provilkov, Vatsal Raina, <strong>Vyas Raina</strong>, Mariya Shmatova, Panos Tigas, Boris Yangel</p>
+                            <p>Advances in Neural Information Processing Systems (NeurIPS), Datasets and Benchmarks Track 2021</p>
+                            <a class="button button1" href="https://arxiv.org/pdf/2107.07455" target="_blank">Paper</a>
+                            <a class="button button3" href="https://www.youtube.com/playlist?list=PLJOzdkh8T5koRCRC6B-H4m1e-iTWrKbYo" target="_blank">Presentation</a>
+                            <a class="button button4" href="https://github.com/Shifts-Project/shifts" target="_blank">Code</a>
+                            <details>
+                                <summary style="display:list-item">Abstract</summary>
+                                There has been significant research done on developing methods for improving robustness to distributional shift and uncertainty estimation. In contrast,
+                                only limited work has examined developing standard datasets and benchmarks for assessing these approaches. Additionally, most work on uncertainty estimation 
+                                and robustness has developed new techniques based on small-scale regression or image classification tasks. However, many tasks of practical interest have 
+                                different modalities, such as tabular data, audio, text, or sensor data, which offer significant challenges involving regression and discrete or continuous structured 
+                                prediction. Thus, given the current state of the field, a standardized large-scale dataset of tasks across a range of modalities affected by distributional shifts is 
+                                necessary. This will enable researchers to meaningfully evaluate the plethora of recently developed uncertainty quantification methods, as well as assessment criteria and 
+                                state-of-the-art baselines. In this work, we propose the \emph{Shifts Dataset} for evaluation of uncertainty estimates and robustness to distributional shift. The dataset, 
+                                which has been collected from industrial sources and services, is composed of three tasks, with each corresponding to a particular data modality: tabular weather prediction, 
+                                machine translation, and self-driving car (SDC) vehicle motion prediction. All of these data modalities and tasks are affected by real, `in-the-wild' distributional shifts and 
+                                pose interesting challenges with respect to uncertainty estimation. In this work we provide a description of the dataset and baseline results for all tasks. Abstract written here.
+                            </details>                 
+                        </div>
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img src="assets/publication_imgs/uni_sla.JPG" class="img">
+                    </div>
+                        <div class="doublecolumn">
+                            <p class="title_paper">Universal adversarial attacks on spoken language assessment systems</p>
+                            <p><strong>Vyas Raina</strong>, Mark Gales, Katherine Knill</p>
+                            <p>INTERSPEECH 2020</p>
+                            <a class="button button1" href="https://www.repository.cam.ac.uk/bitstream/handle/1810/316378/Universal_Adversarial_Attack.pdf?sequence=1" target="_blank">Paper</a>
+                            <a class="button button3" href="http://www.interspeech2020.org/index.php?m=content&c=index&a=show&catid=346&id=1094" target="_blank">Presentation</a>
+                            <a class="button button4" href="https://github.com/rainavyas/NeurTxtGrader" target="_blank">Code</a>
+                            <details>
+                                <summary style="display:list-item">Abstract</summary>
+                                There is an increasing demand for automated spoken language assessment (SLA) systems, partly driven by the performance improvements that have come from deep learning based approaches. 
+                                One aspect of deep learning systems is that they do not require expert derived features, operating directly on the original signal such as a speech recognition (ASR) transcript. This, however, 
+                                increases their potential susceptibility to adversarial attacks as a form of candidate malpractice. In this paper the sensitivity of SLA systems to a universal black-box attack on the ASR text 
+                                output is explored. The aim is to obtain a single, universal phrase to maximally increase any candidate's score. Four approaches to detect such adversarial attacks are also described. All the systems, 
+                                and associated detection approaches, are evaluated on a free (spontaneous) speaking section from a Business English test. It is shown that on deep learning based SLA systems the average candidate score 
+                                can be increased by almost one grade level using a single six word phrase appended to the end of the response hypothesis. Although these large gains can be obtained, they can be easily detected based on 
+                                detection shifts from the scores of a “traditional” Gaussian Process based grader.
+                            </details>                 
+                        </div>
+                </div>
+
+
+
+
 
             </div>
         </div>
@@ -130,28 +201,45 @@
       
       
   
-          <section id="Challenges">
+    <section id="Challenges">
         <div class="content-section-a">
             <div class="container">
                 <h2 style="text-align:center">Challenges</h2>
                 <hr>
                 <div class="row">
+        <div class="column">
+            <img src="https://shifts.ai/assets/images/dataset/weather.gif" class="gif">
+        </div>
 		  <div class="doublecolumn">
-                    <p>
-                        Describe SHIFTS 1.0 here!
-                    </p>                    
-
+                    <h3 class="title_paper">Shifts Challenge 1.0</h3>
+                    <p>NeurIPS 2021</p> 
+                    <p>The Shifts Challenge aims to provide a standardized set of benchmark datasets and
+                        baseline models across a range of modalities to assess the impact of <em>distributional shift</em> in the wild. Often
+                        deployed systems will fail when used in domains where there exist a statistical shift from the source training domain.
+                        The aim of this challenge is two-fold: the development of models that are robust to real-life distributional shifts <strong>AND</strong>
+                        the ability of models to give a meaningful uncertainty measure for their predictions, i.e., the models
+                        should <em>know</em> when they are likely to be wrong, so that human intervention can be provided in such settings.
+                    </p> 
+                    <p>My work in this challenge focused on development of the Weather track, where I designed the data splits, augmentation of data and model baseline training.
+                       Further, I worked on refining and assessing uncertainty measures to be used for model evaluation. Finally, I actively helped in the 
+                       organization, tutorial writing and running of the challenge at NeurIPS 2021.
+                    </p> 
+                    <p>The Shifts Weather Prediction dataset contains both a scalar regression and a multi-class classification task. Specifically, at a particular latitude, longitude,
+                         and timestamp, one must predict either the air temperature at two meters above the ground or the precipitation class, given targets and features derived
+                          from weather station measurements and weather forecast models. This data is used by Yandex for real-time weather forecasts and represents a real industrial application.
+                    </p>
+                    <a class="button button1" href="https://arxiv.org/abs/2107.07455" target="_blank">Paper</a>
+                    <a class="button button2" href="https://shifts.ai/" target="_blank">Challenge</a>
+                    <a class="button button3" href="https://www.youtube.com/playlist?list=PLJOzdkh8T5koRCRC6B-H4m1e-iTWrKbYo" target="_blank">Talks</a>
+                    <a class="button button4" href="https://github.com/Shifts-Project/shifts/tree/main/weather" target="_blank">Code</a>        
 		  </div>
-		  <!-- <div class="column">
-		    <img src="assets/photo.jpeg" class="center">
-		  </div> -->
                 </div>
             </div>
         </div>
     </section>
 
       
-                <section id="Service">
+    <!-- <section id="Service">
         <div class="content-section-a">
             <div class="container">
                 <h2 style="text-align:center">Service</h2>
@@ -163,12 +251,9 @@
                     </p>                    
 
 		  </div>
-		  <!-- <div class="column">
-		    <img src="assets/photo.jpeg" class="center">
-		  </div> -->
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
   </body>
